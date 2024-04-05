@@ -150,4 +150,4 @@ def bad_request(error_string):
 
 # Run app, bind to local ip and port 4567
 if __name__ == "__main__":
-    app.run(host = '0.0.0.0', debug = False, port = 4567)
+    app.run(host = '0.0.0.0', debug = False, port = 6006)
