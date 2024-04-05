@@ -21,10 +21,10 @@ with open("./models/lang_abbr_key.json") as f:
 lt.languages_supported = abbr_key
 
 # Set master language, already set as default
-# lt.master_lang = "en"
+lt.master_lang = "zh"
 
 # Set cpu device
-lt.device = "cpu"
+lt.device = "cuda"
 
 # Set direction of translations (unidirectional vs. bidirectional), already set as default
 # lt.direction = "bidirectional"
