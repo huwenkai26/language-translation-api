@@ -1,16 +1,8 @@
-
-
 import json
-import os
 from flask import Flask, jsonify, abort
 from flask_restx import Resource, Api, fields
-from requests.api import request
 from restx_models.schemas import api as translation_models
-from flask_restx.apidoc import apidoc
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from helsinki_translation import LanguageTranslation
-import torch
-import sys
 
 # Initiate all models/tokenizers for translation
 lt = LanguageTranslation()
